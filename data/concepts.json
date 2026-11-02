@@ -1,0 +1,200 @@
+{
+  "version": "0.1.0",
+  "concepts": [
+    {
+      "id": "distinction-01",
+      "label": "Distinction",
+      "aliases": [],
+      "sense": "Pilot conceptual sense",
+      "definition": "A difference recognized or drawn between things, meanings, or possibilities.",
+      "recognition": "Identify the feature or criterion by which two cases differ.",
+      "examples": [
+        "Separating uncertainty about the answer from ambiguity in the question."
+      ],
+      "counterexamples": [
+        "Treating two synonyms as different concepts solely because their spellings differ."
+      ],
+      "contexts": [
+        "The task determines which differences matter; a useful distinction in one task may be irrelevant in another."
+      ],
+      "limits": "A distinction may be graded or contested. Excluding an alternative does not fully define positive content.",
+      "status": "draft",
+      "provenance": {
+        "kind": "original-editorial-draft",
+        "originator": "Anier Landon Woodyard",
+        "assistance": "AI-assisted drafting from founding discussion",
+        "review": "External source review pending"
+      },
+      "relations": [
+        {
+          "type": "supports",
+          "target": "ambiguity-01",
+          "note": "Helps separate alternative interpretations."
+        },
+        {
+          "type": "supports",
+          "target": "vagueness-01",
+          "note": "Helps distinguish multiple readings from unclear boundaries."
+        }
+      ]
+    },
+    {
+      "id": "ambiguity-01",
+      "label": "Ambiguity",
+      "aliases": [],
+      "sense": "Pilot conceptual sense",
+      "definition": "The availability of more than one distinct interpretation of an expression or situation.",
+      "recognition": "Can you state two different readings, rather than merely a fuzzy threshold?",
+      "examples": [
+        "“I saw her duck” can concern an animal or a movement."
+      ],
+      "counterexamples": [
+        "A single meaning with an unclear cutoff for “tall” illustrates vagueness."
+      ],
+      "contexts": [
+        "Context can favor one reading while leaving others possible. Deliberate ambiguity can serve artistic or social purposes."
+      ],
+      "limits": "In broader everyday usage ambiguity sometimes includes indeterminacy generally; this pilot uses a narrower interpretive sense.",
+      "status": "draft",
+      "provenance": {
+        "kind": "original-editorial-draft",
+        "originator": "Anier Landon Woodyard",
+        "assistance": "AI-assisted drafting from founding discussion",
+        "review": "External source review pending"
+      },
+      "relations": [
+        {
+          "type": "contrasts-with",
+          "target": "vagueness-01",
+          "note": "Alternative readings differ from unclear applicability boundaries."
+        },
+        {
+          "type": "can-produce",
+          "target": "uncertainty-01",
+          "note": "Multiple readings can leave someone unsure which applies."
+        }
+      ]
+    },
+    {
+      "id": "vagueness-01",
+      "label": "Vagueness",
+      "aliases": [],
+      "sense": "Pilot conceptual sense",
+      "definition": "Indeterminacy in the boundaries of application of a meaning or category.",
+      "recognition": "Are there borderline cases even when the intended meaning is understood?",
+      "examples": [
+        "Without a stated threshold, “a short walk” has borderline cases."
+      ],
+      "counterexamples": [
+        "“Bank” meaning a financial institution or a river edge illustrates distinct readings."
+      ],
+      "contexts": [
+        "Purpose, comparison class and agreed thresholds can sharpen an application without removing every borderline case."
+      ],
+      "limits": "Vagueness can be useful when precise cutoffs would be artificial. It can coexist with ambiguity.",
+      "status": "draft",
+      "provenance": {
+        "kind": "original-editorial-draft",
+        "originator": "Anier Landon Woodyard",
+        "assistance": "AI-assisted drafting from founding discussion",
+        "review": "External source review pending"
+      },
+      "relations": [
+        {
+          "type": "contrasts-with",
+          "target": "ambiguity-01",
+          "note": "A boundary can be unclear within one reading."
+        },
+        {
+          "type": "can-produce",
+          "target": "uncertainty-01",
+          "note": "Borderline cases can leave someone unsure whether a label applies."
+        }
+      ]
+    },
+    {
+      "id": "uncertainty-01",
+      "label": "Uncertainty",
+      "aliases": [],
+      "sense": "Pilot conceptual sense",
+      "definition": "Limited confidence or lack of settled knowledge about a claim, interpretation, or outcome.",
+      "recognition": "State what you are unsure about and what information could change that.",
+      "examples": [
+        "You understand a forecast but are unsure whether rain will occur."
+      ],
+      "counterexamples": [
+        "A clearly understood question with a known answer does not create uncertainty merely by being complex."
+      ],
+      "contexts": [
+        "Uncertainty depends on whose information and confidence are at issue, and can remain despite precise language."
+      ],
+      "limits": "This draft concerns an epistemic sense; technical probabilistic measures require separate entries.",
+      "status": "draft",
+      "provenance": {
+        "kind": "original-editorial-draft",
+        "originator": "Anier Landon Woodyard",
+        "assistance": "AI-assisted drafting from founding discussion",
+        "review": "External source review pending"
+      },
+      "relations": [
+        {
+          "type": "contrasts-with",
+          "target": "ambiguity-01",
+          "note": "A person can be unsure even when an expression has one clear reading."
+        },
+        {
+          "type": "contrasts-with",
+          "target": "vagueness-01",
+          "note": "A precise boundary does not guarantee knowledge about a case."
+        }
+      ]
+    },
+    {
+      "id": "context-01",
+      "label": "Context",
+      "aliases": [],
+      "sense": "Pilot conceptual sense",
+      "definition": "The surrounding circumstances relevant to interpreting an expression, event, or claim.",
+      "recognition": "Ask who, when, where, for what purpose, and against which background.",
+      "examples": [
+        "“It is cold” can concern weather, food, or a room, depending on the conversation."
+      ],
+      "counterexamples": [
+        "An unrelated fact about the speaker does not automatically help interpret the claim."
+      ],
+      "contexts": [
+        "Relevant context depends on the interpretive task; selecting context itself involves judgment."
+      ],
+      "limits": "Context can inform an interpretation without settling it. More surrounding information is not always useful.",
+      "status": "draft",
+      "provenance": {
+        "kind": "original-editorial-draft",
+        "originator": "Anier Landon Woodyard",
+        "assistance": "AI-assisted drafting from founding discussion",
+        "review": "External source review pending"
+      },
+      "relations": [
+        {
+          "type": "informs",
+          "target": "distinction-01",
+          "note": "A purpose can determine which differences are relevant."
+        },
+        {
+          "type": "informs",
+          "target": "ambiguity-01",
+          "note": "Surrounding circumstances can favor one interpretation."
+        },
+        {
+          "type": "informs",
+          "target": "vagueness-01",
+          "note": "A comparison class can clarify application boundaries."
+        },
+        {
+          "type": "informs",
+          "target": "uncertainty-01",
+          "note": "Background evidence can alter confidence without guaranteeing certainty."
+        }
+      ]
+    }
+  ]
+}
