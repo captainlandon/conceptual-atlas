@@ -1,0 +1,8 @@
+{
+  "name": "Conceptual Atlas",
+  "description": "A cognitive map of meanings, distinctions, relationships, and context to navigate reality and lived experience.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
