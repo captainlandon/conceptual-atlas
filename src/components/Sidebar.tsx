@@ -94,7 +94,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       <p className="mt-8 text-xs text-[#5c635b] leading-relaxed border-t border-[var(--line)] pt-4">
-        Five connected meanings. Original drafts awaiting source review.
+        Five connected meanings with sources. Independent specialist review pending.
       </p>
     </aside>
   );

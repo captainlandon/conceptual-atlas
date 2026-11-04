@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "concepts": [
     {
       "id": "distinction-01",
       "label": "Distinction",
       "aliases": [],
-      "sense": "Pilot conceptual sense",
+      "sense": "Differentiation or recognition of difference",
       "definition": "A difference recognized or drawn between things, meanings, or possibilities.",
       "recognition": "Identify the feature or criterion by which two cases differ.",
       "examples": [
@@ -17,24 +17,50 @@
       "contexts": [
         "The task determines which differences matter; a useful distinction in one task may be irrelevant in another."
       ],
-      "limits": "A distinction may be graded or contested. Excluding an alternative does not fully define positive content.",
+      "limits": "A distinction may be graded or contested. Excluding an alternative does not fully define positive content. This entry concerns differentiation, not distinction as honor, rank, or excellence. The project aphorism “distinction is negation” is a separate philosophical proposition.",
       "status": "draft",
       "provenance": {
         "kind": "original-editorial-draft",
         "originator": "Anier Landon Woodyard",
         "assistance": "AI-assisted drafting from founding discussion",
-        "review": "External source review pending"
+        "review": "Compared with the listed sources using AI assistance; independent specialist review pending.",
+        "scope": "Definitions are original paraphrases or working definitions; examples and relationship explanations are editorial proposals."
       },
       "relations": [
         {
           "type": "supports",
           "target": "ambiguity-01",
-          "note": "Helps separate alternative interpretations."
+          "note": "Helps separate alternative interpretations.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "supports",
           "target": "vagueness-01",
-          "note": "Helps distinguish multiple readings from unclear boundaries."
+          "note": "Helps distinguish multiple readings from unclear boundaries.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
+        }
+      ],
+      "language": "en",
+      "scheme": "atlas-pilot-en",
+      "source_refs": [
+        "collins-distinction"
+      ],
+      "preferred_expression": "distinction-01-en",
+      "expressions": [
+        {
+          "id": "distinction-01-en",
+          "language": "en",
+          "text": "Distinction",
+          "script": "Latn",
+          "direction": "ltr",
+          "usage": "Differentiation or recognition of difference",
+          "cultural_context": "English-language pilot; no claim of universality or cross-language identity.",
+          "source_refs": [
+            "collins-distinction"
+          ],
+          "status": "draft"
         }
       ]
     },
@@ -42,9 +68,9 @@
       "id": "ambiguity-01",
       "label": "Ambiguity",
       "aliases": [],
-      "sense": "Pilot conceptual sense",
-      "definition": "The availability of more than one distinct interpretation of an expression or situation.",
-      "recognition": "Can you state two different readings, rather than merely a fuzzy threshold?",
+      "sense": "Linguistic multiplicity of meaning",
+      "definition": "The availability of more than one distinct meaning or reading of a linguistic expression.",
+      "recognition": "Can you paraphrase two distinct readings of the expression? Merely lacking a detail does not by itself establish ambiguity.",
       "examples": [
         "“I saw her duck” can concern an animal or a movement."
       ],
@@ -54,24 +80,52 @@
       "contexts": [
         "Context can favor one reading while leaving others possible. Deliberate ambiguity can serve artistic or social purposes."
       ],
-      "limits": "In broader everyday usage ambiguity sometimes includes indeterminacy generally; this pilot uses a narrower interpretive sense.",
+      "limits": "This is the narrower linguistic sense. Different implications or uncertain intentions do not by themselves establish multiple lexical meanings. Ambiguity can coexist with vagueness and does not establish deception.",
       "status": "draft",
       "provenance": {
         "kind": "original-editorial-draft",
         "originator": "Anier Landon Woodyard",
         "assistance": "AI-assisted drafting from founding discussion",
-        "review": "External source review pending"
+        "review": "Compared with the listed sources using AI assistance; independent specialist review pending.",
+        "scope": "Definitions are original paraphrases or working definitions; examples and relationship explanations are editorial proposals."
       },
       "relations": [
         {
           "type": "contrasts-with",
           "target": "vagueness-01",
-          "note": "Alternative readings differ from unclear applicability boundaries."
+          "note": "Alternative readings differ from unclear applicability boundaries.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "can-produce",
           "target": "uncertainty-01",
-          "note": "Multiple readings can leave someone unsure which applies."
+          "note": "Multiple readings can leave someone unsure which applies.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
+        }
+      ],
+      "language": "en",
+      "scheme": "atlas-pilot-en",
+      "source_refs": [
+        "sep-ambiguity",
+        "sep-vagueness"
+      ],
+      "preferred_expression": "ambiguity-01-en",
+      "expressions": [
+        {
+          "id": "ambiguity-01-en",
+          "language": "en",
+          "text": "Ambiguity",
+          "script": "Latn",
+          "direction": "ltr",
+          "usage": "Linguistic multiplicity of meaning",
+          "cultural_context": "English-language pilot; no claim of universality or cross-language identity.",
+          "source_refs": [
+            "sep-ambiguity",
+            "sep-vagueness"
+          ],
+          "status": "draft"
         }
       ]
     },
@@ -79,36 +133,65 @@
       "id": "vagueness-01",
       "label": "Vagueness",
       "aliases": [],
-      "sense": "Pilot conceptual sense",
-      "definition": "Indeterminacy in the boundaries of application of a meaning or category.",
+      "sense": "Borderline applicability",
+      "definition": "A feature of an expression whose application admits borderline cases, even when the intended sense is understood.",
       "recognition": "Are there borderline cases even when the intended meaning is understood?",
       "examples": [
         "Without a stated threshold, “a short walk” has borderline cases."
       ],
       "counterexamples": [
-        "“Bank” meaning a financial institution or a river edge illustrates distinct readings."
+        "“Bank” meaning a financial institution or a river edge illustrates distinct readings.",
+        "“Someone submitted the form” leaves the person unspecified; lack of that detail alone does not establish a vague category boundary."
       ],
       "contexts": [
         "Purpose, comparison class and agreed thresholds can sharpen an application without removing every borderline case."
       ],
-      "limits": "Vagueness can be useful when precise cutoffs would be artificial. It can coexist with ambiguity.",
+      "limits": "Vagueness differs from generality and missing detail, can be useful, and can coexist with ambiguity. Philosophical accounts disagree about what explains borderline cases. A stipulated cutoff serves a purpose; it need not discover a pre-existing exact boundary.",
       "status": "draft",
       "provenance": {
         "kind": "original-editorial-draft",
         "originator": "Anier Landon Woodyard",
         "assistance": "AI-assisted drafting from founding discussion",
-        "review": "External source review pending"
+        "review": "Compared with the listed sources using AI assistance; independent specialist review pending.",
+        "scope": "Definitions are original paraphrases or working definitions; examples and relationship explanations are editorial proposals."
       },
       "relations": [
         {
           "type": "contrasts-with",
           "target": "ambiguity-01",
-          "note": "A boundary can be unclear within one reading."
+          "note": "A boundary can be unclear within one reading.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "can-produce",
           "target": "uncertainty-01",
-          "note": "Borderline cases can leave someone unsure whether a label applies."
+          "note": "Borderline cases can leave someone unsure whether a label applies.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
+        }
+      ],
+      "language": "en",
+      "scheme": "atlas-pilot-en",
+      "source_refs": [
+        "sep-vagueness",
+        "sep-ambiguity"
+      ],
+      "preferred_expression": "vagueness-01-en",
+      "expressions": [
+        {
+          "id": "vagueness-01-en",
+          "language": "en",
+          "text": "Vagueness",
+          "script": "Latn",
+          "direction": "ltr",
+          "usage": "Borderline applicability",
+          "cultural_context": "English-language pilot; no claim of universality or cross-language identity.",
+          "source_refs": [
+            "sep-vagueness",
+            "sep-ambiguity"
+          ],
+          "status": "draft"
         }
       ]
     },
@@ -116,7 +199,7 @@
       "id": "uncertainty-01",
       "label": "Uncertainty",
       "aliases": [],
-      "sense": "Pilot conceptual sense",
+      "sense": "A person’s unsettled confidence or epistemic position",
       "definition": "Limited confidence or lack of settled knowledge about a claim, interpretation, or outcome.",
       "recognition": "State what you are unsure about and what information could change that.",
       "examples": [
@@ -128,24 +211,50 @@
       "contexts": [
         "Uncertainty depends on whose information and confidence are at issue, and can remain despite precise language."
       ],
-      "limits": "This draft concerns an epistemic sense; technical probabilistic measures require separate entries.",
+      "limits": "A pilot working definition, not a complete technical taxonomy. Felt confidence and epistemic warrant can come apart: someone can feel certain without adequate grounds. No probability measure is assumed.",
       "status": "draft",
       "provenance": {
         "kind": "original-editorial-draft",
         "originator": "Anier Landon Woodyard",
         "assistance": "AI-assisted drafting from founding discussion",
-        "review": "External source review pending"
+        "review": "Compared with the listed sources using AI assistance; independent specialist review pending.",
+        "scope": "Definitions are original paraphrases or working definitions; examples and relationship explanations are editorial proposals."
       },
       "relations": [
         {
           "type": "contrasts-with",
           "target": "ambiguity-01",
-          "note": "A person can be unsure even when an expression has one clear reading."
+          "note": "A person can be unsure even when an expression has one clear reading.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "contrasts-with",
           "target": "vagueness-01",
-          "note": "A precise boundary does not guarantee knowledge about a case."
+          "note": "A precise boundary does not guarantee knowledge about a case.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
+        }
+      ],
+      "language": "en",
+      "scheme": "atlas-pilot-en",
+      "source_refs": [
+        "sep-certainty"
+      ],
+      "preferred_expression": "uncertainty-01-en",
+      "expressions": [
+        {
+          "id": "uncertainty-01-en",
+          "language": "en",
+          "text": "Uncertainty",
+          "script": "Latn",
+          "direction": "ltr",
+          "usage": "A person’s unsettled confidence or epistemic position",
+          "cultural_context": "English-language pilot; no claim of universality or cross-language identity.",
+          "source_refs": [
+            "sep-certainty"
+          ],
+          "status": "draft"
         }
       ]
     },
@@ -153,7 +262,7 @@
       "id": "context-01",
       "label": "Context",
       "aliases": [],
-      "sense": "Pilot conceptual sense",
+      "sense": "Circumstances relevant to interpretation",
       "definition": "The surrounding circumstances relevant to interpreting an expression, event, or claim.",
       "recognition": "Ask who, when, where, for what purpose, and against which background.",
       "examples": [
@@ -165,36 +274,130 @@
       "contexts": [
         "Relevant context depends on the interpretive task; selecting context itself involves judgment."
       ],
-      "limits": "Context can inform an interpretation without settling it. More surrounding information is not always useful.",
+      "limits": "A pilot umbrella definition. Technical accounts differ over what belongs to context. Context sensitivity is not automatically ambiguity; relevant circumstances can help interpretation without fully settling it.",
       "status": "draft",
       "provenance": {
         "kind": "original-editorial-draft",
         "originator": "Anier Landon Woodyard",
         "assistance": "AI-assisted drafting from founding discussion",
-        "review": "External source review pending"
+        "review": "Compared with the listed sources using AI assistance; independent specialist review pending.",
+        "scope": "Definitions are original paraphrases or working definitions; examples and relationship explanations are editorial proposals."
       },
       "relations": [
         {
           "type": "informs",
           "target": "distinction-01",
-          "note": "A purpose can determine which differences are relevant."
+          "note": "A purpose can determine which differences are relevant.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "informs",
           "target": "ambiguity-01",
-          "note": "Surrounding circumstances can favor one interpretation."
+          "note": "Surrounding circumstances can favor one interpretation.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "informs",
           "target": "vagueness-01",
-          "note": "A comparison class can clarify application boundaries."
+          "note": "A comparison class can clarify application boundaries.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
         },
         {
           "type": "informs",
           "target": "uncertainty-01",
-          "note": "Background evidence can alter confidence without guaranteeing certainty."
+          "note": "Background evidence can alter confidence without guaranteeing certainty.",
+          "status": "proposed",
+          "scope": "Pilot explanatory relationship, subject to context and editorial review."
+        }
+      ],
+      "language": "en",
+      "scheme": "atlas-pilot-en",
+      "source_refs": [
+        "sep-pragmatics"
+      ],
+      "preferred_expression": "context-01-en",
+      "expressions": [
+        {
+          "id": "context-01-en",
+          "language": "en",
+          "text": "Context",
+          "script": "Latn",
+          "direction": "ltr",
+          "usage": "Circumstances relevant to interpretation",
+          "cultural_context": "English-language pilot; no claim of universality or cross-language identity.",
+          "source_refs": [
+            "sep-pragmatics"
+          ],
+          "status": "draft"
         }
       ]
+    }
+  ],
+  "schema_version": "0.2",
+  "mappings": [],
+  "sources": [
+    {
+      "id": "collins-distinction",
+      "title": "Distinction",
+      "authors": "Collins dictionaries",
+      "url": "https://www.collinsdictionary.com/us/dictionary/english/distinction",
+      "location": "Differentiation/difference senses; excludes honor and excellence senses",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Original paraphrase; copyrighted source text is not imported."
+    },
+    {
+      "id": "sep-ambiguity",
+      "title": "Ambiguity",
+      "authors": "Adam Sennet",
+      "url": "https://plato.stanford.edu/entries/ambiguity/",
+      "location": "Introduction; sections 2.1–2.3 and 3",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Scholarly reference synthesis; original summaries only; no text import license assumed."
+    },
+    {
+      "id": "sep-vagueness",
+      "title": "Vagueness",
+      "authors": "Roy Sorensen",
+      "url": "https://plato.stanford.edu/entries/vagueness/",
+      "location": "Introduction; sections 1–2",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Scholarly reference synthesis; theories of borderline cases remain disputed."
+    },
+    {
+      "id": "sep-certainty",
+      "title": "Certainty",
+      "authors": "Baron Reed",
+      "url": "https://plato.stanford.edu/entries/certainty/",
+      "location": "Section 1, psychological versus epistemic certainty",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Supports a distinction in the limits note; not a complete definition of uncertainty."
+    },
+    {
+      "id": "sep-pragmatics",
+      "title": "Pragmatics",
+      "authors": "Kepa Korta and John Perry",
+      "url": "https://plato.stanford.edu/entries/pragmatics/",
+      "location": "Introduction, context and utterance-specific facts",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Scholarly reference synthesis; context has competing technical definitions."
+    },
+    {
+      "id": "skos-reference",
+      "title": "SKOS Reference",
+      "authors": "Alistair Miles and Sean Bechhofer (editors)",
+      "url": "https://www.w3.org/TR/skos-reference/",
+      "location": "Sections 5 and 10, language labels and mapping properties",
+      "accessed": "2026-11-03",
+      "rights": "Reference and original paraphrase only; no source corpus redistributed.",
+      "review_note": "Design reference; this pilot is not a SKOS implementation or conformance claim."
     }
   ]
 }

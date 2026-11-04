@@ -45,6 +45,9 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
+.print-only { display: none; }
+p, li, a { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 /* Print layout */
 @media print {
   body {

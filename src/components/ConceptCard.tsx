@@ -1,5 +1,6 @@
 import React from 'react';
 import { Concept } from '../types/concept';
+import { SourceNotes } from './SourceNotes';
 
 interface ConceptCardProps {
   concept: Concept;
@@ -46,6 +47,11 @@ export const ConceptCard: React.FC<ConceptCardProps> = ({
         {concept.label}
       </h2>
 
+      <details className="mb-5 text-sm border border-[var(--line)] p-3 rounded">
+        <summary className="cursor-pointer font-semibold">Expressions and language context</summary>
+        {concept.expressions.map(e => <div key={e.id} className="mt-3"><p><bdi lang={e.language} dir={e.direction}>{e.text}</bdi> · {e.language} · {e.status}</p><p className="text-xs mt-1">{e.usage}. {e.cultural_context}</p></div>)}
+        <p className="text-xs mt-3">Separate senses and documented mappings preserve differences across languages. This pilot currently contains English entries.</p>
+      </details>
       {/* Meaning / Definition */}
       <div className="mb-5">
         <h3 className="text-xs font-bold uppercase tracking-wider text-[#55625a] mb-1.5">
@@ -150,7 +156,7 @@ export const ConceptCard: React.FC<ConceptCardProps> = ({
                   </span>
                 </div>
                 <small className="block text-xs text-[#55625a] group-hover:text-white/90 leading-normal">
-                  {rel.note}
+                  {rel.note} ({rel.status})
                 </small>
               </button>
             );
@@ -158,9 +164,10 @@ export const ConceptCard: React.FC<ConceptCardProps> = ({
         </div>
       </div>
 
+      <SourceNotes ids={concept.source_refs} />
       {/* Provenance */}
       <p className="provenance text-xs text-[#5c635b] border-t border-[var(--line)] pt-3 mt-6">
-        Original editorial draft · AI-assisted · External source review pending.
+        {concept.provenance.review} {concept.provenance.scope}
       </p>
     </article>
   );

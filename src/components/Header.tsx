@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ currentMode, onSelectMode, versi
     <header className="px-[5vw] py-8 border-b border-[var(--line)] flex flex-wrap justify-between items-center gap-6 bg-[var(--paper)] no-print">
       <div>
         <div className="eyebrow mb-1">Meaning · Relationships · Context</div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <h1 className="font-serif-atlas text-3xl sm:text-4xl m-0 font-normal text-[var(--ink)]">
             Conceptual Atlas
           </h1>

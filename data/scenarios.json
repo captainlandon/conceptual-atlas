@@ -1,0 +1,113 @@
+[
+  {
+    "id": "duck",
+    "title": "Multiple readings",
+    "expression": "I saw her duck.",
+    "observation": "Only the written sentence is supplied.",
+    "analyses": [
+      {
+        "concept": "ambiguity-01",
+        "explanation": "One reading concerns seeing her animal; another concerns seeing her lower her head. More surrounding language can favor one reading."
+      },
+      {
+        "concept": "uncertainty-01",
+        "explanation": "A reader may be unsure which reading was intended. That uncertainty is an effect on the reader, distinct from the expression’s multiple readings."
+      }
+    ],
+    "question": "Which reading fits, and what additional sentence would help?",
+    "sources": [
+      "sep-ambiguity"
+    ]
+  },
+  {
+    "id": "short",
+    "title": "A borderline category",
+    "expression": "Take a short walk.",
+    "observation": "No duration, distance, comparison class, or purpose is supplied.",
+    "analyses": [
+      {
+        "concept": "vagueness-01",
+        "explanation": "Within the intended walking sense, some distances or durations can be borderline for “short.” This is different from offering two distinct word meanings."
+      },
+      {
+        "concept": "context-01",
+        "explanation": "A walking task and an agreed duration can make the request more usable. The chosen cutoff is a practical agreement, not proof of the one true meaning."
+      }
+    ],
+    "question": "What purpose and comparison class matter, and would an agreed duration help?",
+    "sources": [
+      "sep-vagueness",
+      "sep-pragmatics"
+    ]
+  },
+  {
+    "id": "both",
+    "title": "Two difficulties together",
+    "expression": "Meet me by the large bank.",
+    "observation": "Only this instruction is known; no location or size criterion is supplied.",
+    "analyses": [
+      {
+        "concept": "ambiguity-01",
+        "explanation": "“Bank” permits a financial-institution reading and a river-edge reading."
+      },
+      {
+        "concept": "vagueness-01",
+        "explanation": "Within a reading, “large” may still have borderline applications. Multiple meanings and borderline boundaries can occur together."
+      },
+      {
+        "concept": "context-01",
+        "explanation": "A prior conversation or a location can help identify the intended place. Ask rather than assuming which reading is correct."
+      }
+    ],
+    "question": "Which bank, and what identifiable location would make the instruction actionable?",
+    "sources": [
+      "sep-ambiguity",
+      "sep-vagueness"
+    ]
+  },
+  {
+    "id": "fine",
+    "title": "Meaning and inference",
+    "expression": "A friend replies, “Fine.”",
+    "observation": "The word was received. Tone, preceding question, and circumstances are not given.",
+    "analyses": [
+      {
+        "concept": "context-01",
+        "explanation": "Agreement, reluctance, or reassurance are possible communicative interpretations. They are not established emotions or proof of multiple lexical senses."
+      },
+      {
+        "concept": "vagueness-01",
+        "explanation": "If “fine” means acceptable, the boundary of acceptable may be unclear."
+      },
+      {
+        "concept": "uncertainty-01",
+        "explanation": "You may be unsure about the friend’s intention. Ask a clarifying question rather than inferring deception."
+      }
+    ],
+    "question": "What did you observe, what did you infer, and what could you ask next?",
+    "sources": [
+      "sep-pragmatics",
+      "sep-certainty"
+    ]
+  },
+  {
+    "id": "forecast",
+    "title": "A clear statement, an uncertain event",
+    "expression": "The forecast assigns a 40% chance of rain tomorrow.",
+    "observation": "The forecast expresses a probability; no ambiguity in its wording is assumed for this exercise.",
+    "analyses": [
+      {
+        "concept": "uncertainty-01",
+        "explanation": "Even with the statement understood, the reader does not know whether rain will occur."
+      },
+      {
+        "concept": "distinction-01",
+        "explanation": "Separate understanding what a claim says from knowing how an event will turn out."
+      }
+    ],
+    "question": "What is understood, and what outcome remains unsettled?",
+    "sources": [
+      "sep-certainty"
+    ]
+  }
+]
