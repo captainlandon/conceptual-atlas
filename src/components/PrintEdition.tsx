@@ -1,5 +1,7 @@
 import React from 'react';
 import { Concept } from '../types/concept';
+import { atlasData } from '../data/conceptsData';
+import { SourceNotes } from './SourceNotes';
 
 interface PrintEditionProps {
   concepts: Concept[];
@@ -114,8 +116,9 @@ export const PrintEdition: React.FC<PrintEditionProps> = ({ concepts, isPrintVie
                   </ul>
                 </div>
 
+                <SourceNotes ids={r.source_refs} />
                 <p className="provenance text-xs text-[#5c635b] pt-3 border-t border-dashed border-[var(--line)]">
-                  Original editorial draft. AI-assisted. External source review pending.
+                  {r.provenance.review}
                 </p>
               </div>
             </article>
@@ -123,7 +126,7 @@ export const PrintEdition: React.FC<PrintEditionProps> = ({ concepts, isPrintVie
         </div>
 
         <footer className="mt-12 pt-6 border-t border-[var(--line)] text-xs text-[#5c635b]">
-          Originator: Anier Landon Woodyard · Working title · v{concepts[0]?.id ? '0.1.0' : ''} · Printable Edition
+          Originator: Anier Landon Woodyard · Working title · v{atlasData.version} · Printable Edition
         </footer>
       </div>
     </div>
