@@ -15,9 +15,9 @@ def review_suggestions(collection, suggestions):
         problems = []
         if not isinstance(proposal, dict):
             proposal = {}
-        if proposal.get("source_id") not in ids or proposal.get("target_id") not in ids:
+        if any(not isinstance(proposal.get(key), str) or proposal[key] not in ids for key in ("source_id", "target_id")):
             problems.append("UNKNOWN_SENSE_ID")
-        if proposal.get("relation") not in RELATIONS:
+        if not isinstance(proposal.get("relation"), str) or proposal["relation"] not in RELATIONS:
             problems.append("UNKNOWN_RELATION")
         for key in ("note", "context", "counterexample"):
             if not isinstance(proposal.get(key), str) or not proposal[key].strip():
