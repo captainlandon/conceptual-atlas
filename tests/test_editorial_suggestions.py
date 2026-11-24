@@ -38,6 +38,12 @@ class EditorialReviewTests(unittest.TestCase):
         self.assertIn("MISSING_COUNTEREXAMPLE", r["problems"])
         self.assertIn("MISSING_EVIDENCE_LICENSE", r["problems"])
 
+    def test_unhashable_fields_are_flagged(self):
+        for key, problem in (("source_id", "UNKNOWN_SENSE_ID"), ("target_id", "UNKNOWN_SENSE_ID"), ("relation", "UNKNOWN_RELATION")):
+            for value in ([], {}, None, 42):
+                proposal = {**self.proposal, key: value}
+                self.assertIn(problem, module.review_suggestions(self.collection, [proposal])[0]["problems"])
+
     def test_bounds_and_malformed_records(self):
         with self.assertRaises(ValueError):
             module.review_suggestions(self.collection, [self.proposal] * 21)
