@@ -39,3 +39,9 @@ Canonical sense records live in `data/concepts.json`. Each record contains stabl
 ## Rights
 
 No public reuse license has been selected. Repository visibility and software/content licensing are separate decisions. Do not infer open-source status from public availability.
+
+
+
+## AI evidence implementation
+
+See [implementation and validation](docs/AI_IMPLEMENTATION.md) and [AI change review evidence](docs/AI_CHANGE_EVIDENCE.md) for this bounded implementation, test results and remaining gates.
